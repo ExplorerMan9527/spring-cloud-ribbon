@@ -1,0 +1,10 @@
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://server2:7002/eureka/,http://server2:7002/eureka/,http://server3:7003/eureka/
+  instance:
+    prefer-ip-address: true
+
+name: provider01
